@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "@commercetools/sdk-auth": "^2.1.2",
+    "@vue/cli-shared-utils": "^3.11.0",
+    "apollo-client": "^2.6.4",
+    "apollo-link": "^1.2.13",
     "core-js": "^2.6.5",
+    "eslint-utils": "^1.4.2",
+    "graphql": "^14.5.8",
+    "typescript": "^3.7.0-dev.20191006",
     "vue": "^2.6.10",
     "vue-apollo": "^3.0.0-rc.7"
   },
@@ -19,10 +25,10 @@
     "@vue/cli-service": "^3.11.0",
     "@vue/cli-service-global": "^3.11.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-vue": "^5.2.3",
     "graphql-tag": "^2.9.0",
-    "vue-cli-plugin-apollo": "^0.21.0",
+    "vue-cli-plugin-apollo": "^0.21.1",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {

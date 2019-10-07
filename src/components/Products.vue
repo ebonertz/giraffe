@@ -26,6 +26,7 @@
               masterData {
                 current {
                   name(locale: "en")
+                  description(locale:"en")
                 }
               }
             }
