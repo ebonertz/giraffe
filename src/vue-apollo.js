@@ -3,20 +3,18 @@ import VueApollo from 'vue-apollo'
 import { createApolloClient } from 'vue-cli-plugin-apollo/graphql-client'
 import { setContext } from 'apollo-link-context';
 import SdkAuth, { TokenProvider } from '@commercetools/sdk-auth';
+import config from './config.js'
 
 // Install the vue plugin
 Vue.use(VueApollo);
 
 // Create token provider for the commercetools project
 const tokenProvider = new TokenProvider({
-  sdkAuth: new SdkAuth({
-    host: 'https://auth.commercetools.co',
-    projectKey: 'js-sdk-training',
-    credentials: {
-      clientId: 'lLL-8HoJl3JD2PmSstWzsZV5',
-      clientSecret: 'miFaUIlai20jrx_o8izYxcy6Kw66oj5r',
-    },
-    scopes: ['manage_project:js-sdk-training'],
+    sdkAuth: new SdkAuth({
+    host: config.host,
+    projectKey: config.projectKey,
+    credentials: config.credentials,
+    scopes:config.scopes,
   }),
   fetchTokenInfo: sdkAuth => sdkAuth.anonymousFlow(),
 });
