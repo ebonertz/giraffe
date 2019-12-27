@@ -1,0 +1,17 @@
+import gql from 'graphql-tag'
+
+export const productsQuery = gql`
+{
+  products(limit: 10) {
+    total
+    results {
+      id
+      masterData {
+        current {
+          name(locale: "en")
+          description(locale:"en")
+        }
+      }
+    }
+  }
+`

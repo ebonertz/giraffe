@@ -12,6 +12,7 @@
 <script>
   import gql from 'graphql-tag';
   import AddToCart from './AddToCart';
+  import productsQuery from '../constants/products.graphql';
 
   export default {
     components: {AddToCart},
